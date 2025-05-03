@@ -9,6 +9,10 @@
       background-color: #000000; /* Light gray background */
       margin: 0; /* Remove default body margin */
       padding: 0; /* Remove default body padding */
+      font-size: 1.15rem;      
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
+      text-shadow: 0px 0px 15px #fbefcf;       
+      color: #fbefcf;      
     }    
     
     nav {
@@ -33,23 +37,18 @@
       align-items: flex-start;
     }
     .main-content {
-      background-color:#000000;
       flex: 0 0 80%;
-      border-style: double;
-      border-color: #fbefcf;
-      border-width: 1px;
-      border-radius: 12px;
       padding-left: 10px;
       padding-right: 10px;      
       margin-right: 5px;
       margin-top: 20px;
-      margin-left: 20px;
+      margin-left: 20px;      
+      border-style: double;
+      border-color: #fbefcf;
+      border-width: 1px;
+      border-radius: 12px;
     }
-    .main-text {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fbefcf;      
-      text-shadow: 0px 0px 15px #fbefcf;
-      font-size: 14px;
+    .main-text {     
       text-align: center;
     }
 
@@ -64,34 +63,34 @@
       margin-right: 20px;
       margin-top: 20px;
     }
-    .side-text {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fbefcf;      
-      text-shadow: 0px 0px 15px #fbefcf;
-      font-size: 10px;
+    .side-text {     
+      font-size: .9rem;
     }
 
     h1 {
       font-family: Copperplate, Papyrus, fantasy;
       color: #ffdd7f;
-      font-weight: lighter;
+      font-weight: 500;
       text-shadow: 0px 0px 5px #ff0000;
+      text-align: center;
+      font-size: 3rem;
     }
     h2 { 
       font-family: Copperplate, Papyrus, fantasy;
       color: #ffdd7f;
-      font-weight: lighter;
+      font-weight: 500;
       text-shadow: 0px 0px 5px #ff0000;
     }
 
     button {
       background-color: #eaca71;
-      box-shadow: inset 0px 0px 5px black;
+      box-shadow: inset 0px 0px 7px black;
       border-radius: 4px;
       border: solid;
       border-width: 1px;
-      transition: background-color 1s;
-      transition: box-shadow 1.5s;
+      transition: background-color .5s;
+      transition: box-shadow 1s;
+      font-size: 1rem;
     }
     button:hover {
       background-color: #e0cd9e;
