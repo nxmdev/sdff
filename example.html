@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Learning HTML and CSS</title>    
-  </head>
 
-  <body>
-    <style>
-      .text-title {
-        font-weight: bold;
-        font-size: 24px;
+<head>
+  <title>Learning HTML and CSS</title>
+</head>
+
+<body>
+  <style>
+    .text-title {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .text-price {
+      color: rgb(0, 118, 0);
+      font-weight: bold;
+    }
+
+    .button-cart {
+      background-color: rgb(255, 216, 20);
+      border: none;
+      border-radius: 16px;
+      height: 28px;
+      width: 100px;
+      transition: opacity 0.15s;
+    }
+
+    .button-buy {
+      background-color: rgb(255, 164, 28);
+      border: none;
+      border-radius: 16px;
+      height: 28px;
+      width: 100px;
+      margin-left: 8px;
+      transition: opacity 0.15s;
+    }
+
+    .text-amazon:hover {
+      color: red;
+    }
+
+    .button-cart:hover {
+      cursor: pointer;
+      background-color: rgb(247, 174, 38);
+    }
+
+    .button-cart:active {
+      opacity: 0.3;
+    }
+
+    .button-buy:hover {
+      cursor: pointer;
+      background-color: rgb(131, 87, 7);
+    }
+
+    .button-buy:active {
+      opacity: 0.3;
+    }
+  </style>
+
+  <p>
+    <a href="http://www.amazon.com"><text class="text-amazon">Back to Amazon</text></a>
+
+    <br><br>
+
+    <text class="text-title">Nike Black Running Shoes</text>
+
+    <br><br>
+
+    <text class="text-price">$39 - in stock.</text>
+
+    <br><br>
+
+    Free delivery tomorrow.
+
+    <br><br>
+
+    <button class="button-cart">Add to Cart</button> <button class="button-buy">Buy now</button>
+
+    <br><br><br><br>
+
+    <a href="index.html"><button>Home</button></a>
+    <a href="buttons.html"><button>Button Example Page</button></a>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <center>Copyright Paynice2020</center>
+  </p>
+
+  <button id="backToTop" style="display:none; position:fixed; bottom:20px; right:20px; padding:10px;">Top</button>
+
+  <script>
+    // Show button when scrolling down
+    window.onscroll = function () {
+      const btn = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) { // scroll threshold
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
       }
+    };
 
-      .text-price {
-        color: rgb(0,118,0);
-        font-weight: bold;
-      }
+    // Scroll smoothly to top when clicked
+    document.getElementById('backToTop').onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
 
-      .button-cart {
-        background-color: rgb(255,216,20);
-        border: none;
-        border-radius: 16px;
-        height: 28px;
-        width: 100px;
-        transition: opacity 0.15s;
-      }
-
-      .button-buy {
-        background-color: rgb(255,164,28);
-        border: none;
-        border-radius: 16px;
-        height: 28px;
-        width: 100px;
-        margin-left: 8px;
-        transition: opacity 0.15s;
-      }
-
-      .text-amazon:hover {
-        color: red;
-      }
-
-      .button-cart:hover {
-        cursor: pointer;
-        background-color: rgb(247, 174, 38);
-      }
-
-      .button-cart:active {
-        opacity: 0.3;
-      }
-
-      .button-buy:hover {
-        cursor: pointer;
-        background-color: rgb(131, 87, 7);
-      }
-
-      .button-buy:active {
-        opacity: 0.3;
-      }
-    </style>
-        
-    <p>
-      <a href="http://www.amazon.com"><text class="text-amazon">Back to Amazon</text></a>
-      
-      <br><br>
-      
-      <text class="text-title">Nike Black Running Shoes</text>
-      
-      <br><br>
-      
-      <text class="text-price">$39 - in stock.</text>
-      
-      <br><br>
-      
-      Free delivery tomorrow.
-      
-      <br><br>
-      
-      <button class="button-cart">Add to Cart</button> <button class="button-buy">Buy now</button>
-      
-      <br><br><br><br>
-      
-      <a href="index.html"><button>Home</button></a>
-      <a href="buttons.html"><button>Button Example Page</button></a>     
-
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      
-      <center>Copyright Paynice2020</center>    
-    </p>
-
-    <button id="backToTop" style="display:none; position:fixed; bottom:20px; right:20px; padding:10px;">Top</button>
-
-    <script>
-      // Show button when scrolling down
-      window.onscroll = function() {
-        const btn = document.getElementById('backToTop');
-        if (window.pageYOffset > 300) { // scroll threshold
-          btn.style.display = 'block';
-        } else {
-          btn.style.display = 'none';
-        }
-      };
-    
-      // Scroll smoothly to top when clicked
-      document.getElementById('backToTop').onclick = function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      };
-    </script>
-  </body>
 </html>

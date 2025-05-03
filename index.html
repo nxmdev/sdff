@@ -1,122 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>    
-    <title>The Grove</title>    
 
-    <style>      
-      .img-logo {
-        display: inline-block;
-      }
+<head>
+  <title>The Grove</title>
 
-      .header-box {
-        display: flex;
-        align-items: center;
-      }
+  <style>
+    header {
+      display: flex;
+      align-items: center;
+    }
 
-      .nav-bar {
-        display: inline-block;
-        margin-left: 30px;
-      }
-
-      .nav-buttons {
-        margin-left: 5px;
-        margin-right: 5px;
-      }
-
-      .wrapper {
-        margin-left:auto;
-        margin-right: auto;
-        width: 100%;
-        padding-top: 0;
-      }
-
-      .body-divs {
-        display: inline-block;
-        margin-left: 2.5%;
-      }
-
-      .main-content {
-        background-color: blanchedalmond;
-        display: inline-block;
-        width: 80%;
-        vertical-align: top;  
-        padding: 15px 15px 15px;
-        border-style: solid;
-        border-color: rgb(74, 74, 74);
-        border-width: 2px;
-        border-radius: 8px;
-      }
-
-      .side-bar {
-        display: inline-block;
-        background-color: rgb(211, 218, 175);
-        width: 15%;
-        border-style: solid;
-        border-color: rgb(74, 74, 74);
-        border-width: 2px;
-        border-radius: 8px;
-        padding: 15px 15px 15px;
-      }
-    </style>
-  </head>
-
-
-  <body>
+    body {
+      background-color: #000000; /* Light gray background */
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+    }    
     
-    <div class="header-box">
-      <div class="img-logo">
-        <img src="images/222.jfif">
-      </div>
+    nav {
+      display: block;
+      margin-left: 30px;
+    }
+    .nav-buttons {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
 
-      <div class="nav-bar">
-          <a href="example.html"><button class="nav-buttons">Example Project</button></a>
-        
-          <a href="buttons.html"><button class="nav-buttons">Buttons Example Page</button></a>        
-      </div>
+    main {
+      display: flex;
+      flex-wrap: nowrap;      
+      align-items: flex-start;
+    }
+    .main-content {
+      background-color:#000000;
+      flex: 0 0 80%;
+      border-style: double;
+      border-color: #fbefcf;
+      border-width: 1px;
+      border-radius: 12px;
+      padding-left: 10px;
+      padding-right: 10px;      
+      margin-right: 5px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .main-text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fbefcf;      
+      text-shadow: 0px 0px 15px #fbefcf;
+      font-size: 14px;
+    }
+
+    aside {
+      background-color: rgb(0, 0, 0);
+      border-style: double;
+      border-color: #fbefcf;
+      border-width: 1px;
+      border-radius: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    .side-text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fbefcf;      
+      text-shadow: 0px 0px 15px #fbefcf;
+      font-size: 10px;
+    }
+
+    h1 {
+      font-family: Copperplate, Papyrus, fantasy;
+      text-shadow: 0px 0px 30px #fbefcf;
+    }
+    h2 {      
+      font-family: Copperplate, Papyrus, fantasy;
+      text-shadow: 0px 0px 20px #fbefcf;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <div>
+      <img src="images/123.jfif">
     </div>
 
-    <div class="wrapper">
-    <div class="body-divs">
-      <div class="main-content">
-        <h1>Welcome to The Grove</h1>
-          <p>
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          </p>
-      </div>
+    <nav>  
+      <a href="combat.html"><button class="combat-button">Combat</button></a>
+    </nav>
+  </header>
 
-      <div class="side-bar">
-        <h2>Sidebar</h2>
-          <p>
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          In this piece of code the and HTML tags create paragraphs and line breaks in a web page. 
-          Using these tags allows you to change the way your text displays. They are useful ways to create sections. Don’t forget that the line break tag is a self-closing tag.
-          </p>
-      </div>
+  <main>
+    <div class="main-content">
+      <h1>Welcome to The Realm</h1>
+      <p class="main-text">
+          The Realm is a single player (solo) ttrpg or table top role playing game. Above are the different sections and aspects of the game.
+          Each page will have a full description of the game mechanic, how to use it, an example of the mechanic being used in game, and an associated
+          video link to a short YouTube tutorial. I wish you luck in The Realm.
+      </p>
     </div>
-    </div>
-  </body>  
+
+    <aside>
+      <h2>Links</h2>
+      <p class="side-text">  
+        Below are some links to the Learning HTML and CSS class I'm working on.
+        <br>  <br>    
+        <a href="example.html"><button class="nav-buttons">Example Project</button></a>
+        <a href="buttons.html"><button class="nav-buttons">Buttons Example Page</button></a>  
+      </p>
+    </aside>
+  </main>
+</body>
+
 </html>
