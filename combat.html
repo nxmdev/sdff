@@ -3,6 +3,9 @@
   <head>
     <title>Combat - The Realm a Solo TTRPG</title>
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <style>
+    </style>
   </head>
 
   <body>
@@ -31,14 +34,31 @@
           Stamina regenerates to its full amount at the beginning of each combatants attack phase.  
           Your stamina is 5 + (stamina modifier).<br><i>There is a box in the top right of the character sheet to provide you with a place to track your stamina during 
           a battle.</i><br><br>
-          The combatant with the highest stamina goes first. The attacker can use one of their offensive abilities to attack the other combatant. 
-          The defending combatant then uses a defensive skill to avoid damage.<br>
-          <p class="dodge-example-styling">
-            Attack roll is 2d6 + offensive skill modifier + dexterity statistic modifier
-            <br>compared against<br>
-            Defense roll of 2d6 + defensive skill modifier + agility statistic modifier
-          </p>
-          
+          The combatant with the highest stamina attacks first. The Attacker can use one of their offensive abilities to attack the Defender. 
+          When the Attacker declares an attack, they also declare which body part of the Defender they are targetting. To identify a particular body part, 
+          check the character sheet to determine which body part you wish to target and apply the modifiers.<br><br>
+          <i>Head (vital body part) -2 attack roll<br>
+          Chest (vital body part) -1 attack roll<br>
+          Arms (action body part) no penalty<br>
+          Legs (movement body part) no penalty<br></i>
+          The Defender then uses a defensive skill to avoid damage.<br><br>        
+            <text class="combat-example-styling">Attack roll is 2d6 + offensive skill modifier + dexterity statistic modifier
+            <br><i>vs</i><br>
+            Defense roll of 2d6 + defensive skill modifier + agility statistic modifier</text>
+            <br><br>
+            If the Defender wins, no damage is taken and the attack phase continues allowing the same Attacker to spend more stamina to perform another attack 
+            if they wish or to save their remaining stamina to perform defensive manuevers when the attack phase shifts to their opponent.<br><i>Mobs will stop attacking once their 
+            stamina reaches 3 or lower unless otherwise stated on their character sheet.</i><br><br>
+            If the attack is successful, damage is then calculated against the Defender's armor.<br><br>
+            <text class="combat-example-styling">Strength + weapon damage<br>
+            vs<br>
+            Agility + armor rating</text><br><br>
+            If the Defender matches or exceeds the Attackers roll, damage is mitigated by the armor and no wounds are recieved. 
+            If the damage exceeds the armor roll, then the Defender's body part takes 1 wound from single handed weapons and 2 wounds from two handed weapons.
+            <br>Once the Attacker runs out of stamina or they elect to pass turn, it is now the Defender's turn to be the Attacker and 
+            use their stamina to initiate attacks against the Attacker now turned Defender.<br>
+            The combatants take turns attacking until any 2 body parts are fully wounded(incapacitated) or 1 vital body part has been incapacitated, generally your chest and head. 
+            Check character sheet for details on body parts for monsters and other unusual mobs.
         </p>
       </div>
 
