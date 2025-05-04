@@ -10,8 +10,7 @@
       margin: 0; /* Remove default body margin */
       padding: 0; /* Remove default body padding */
       font-size: 1.15rem;      
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
-      text-shadow: 0px 0px 15px #fbefcf;       
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
       color: #fbefcf;      
     }    
     
@@ -42,10 +41,11 @@
       padding-right: 10px;      
       margin-right: 5px;
       margin-top: 20px;
-      margin-left: 20px;      
+      margin-left: 20px;     
+      background-color: rgb(33, 33, 33); 
       border-style: double;
       border-color: #fbefcf;
-      border-width: 1px;
+      border-width: 3px;
       border-radius: 12px;
     }
     .main-text {     
@@ -53,10 +53,10 @@
     }
 
     aside {
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(33, 33, 33);
       border-style: double;
       border-color: #fbefcf;
-      border-width: 1px;
+      border-width: 3px;
       border-radius: 12px;
       padding-left: 10px;
       padding-right: 10px;
@@ -95,6 +95,7 @@
     button:hover {
       background-color: #e0cd9e;
       box-shadow: inset 0px 0px 0px #e0cd9e;
+      cursor: pointer;
     }
 
     a {
