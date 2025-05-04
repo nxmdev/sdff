@@ -3,6 +3,33 @@
   <head>
     <title>The Shop - The Realm a Solo TTRPG</title>  
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <style>
+      
+      .shop-inventory {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        /* gap: 1rem; */
+      }
+
+      .category-title {
+        font-weight: 700;
+      }
+
+      .price-column {
+        grid-column: 1;
+      }
+      .item-column {
+        grid-column: 2;
+      }
+      .ability-column {
+        grid-column: 3;
+      }
+      .item-stats-column {
+        grid-column: 4;
+      }
+    </style>
   </head>
 
   <body>
@@ -28,7 +55,25 @@
         <p class="main-text">
             The Shop is used to outfit yourself with armor and weapons. These items are generally not infused with
             magical properties, although special items may wander in occasionaly. Below is a list of items sold in the shop.
-        </p>
+            <div class="shop-inventory">
+              <p class="price-column">
+                <label class="category-title">Price</label>
+                <br>4g 2s <br>2g 3s
+              </p>
+              <p class="item-column">
+                <label class="category-title">Item</label>
+                  <br>ruty dagger
+              </p>
+              <p class="ability-column">
+                <label class="category-title">Ability</label>     
+                <br>Pierce
+              </p>
+              <p class="item-stats-column">
+                <label class="category-title">Item Stats</label>
+                <br>+2 Dex
+              </p>
+            </div>
+          </p>
       </div>
 
       <aside>
