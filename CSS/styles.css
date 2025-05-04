@@ -1,5 +1,6 @@
     @charset "UTF-8";
 
+    /* Main Styling for the entire website */
     header {
       display: flex;
       align-items: center;
@@ -102,6 +103,7 @@
       text-decoration: none;
     }
 
+
     /* Statistics page styling */
     .stats-info {        
       text-align: left;
@@ -112,10 +114,39 @@
       color: #b8b443;
     }
 
+
     /* Bounties page styling */    
     .checkbox-layout {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       height: 400px;
+    }
+
+
+    /* The Shop page styling */
+    .shop-inventory {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+    }
+    .category-title {
+      font-weight: 700;
+      text-decoration: underline;
+      font-size: 1.7rem;
+    }
+    .price-column {
+      grid-column: 1;
+      text-align: center;
+    }
+    .item-column {
+      grid-column: 2;
+    }
+    .ability-column {
+      grid-column: 3;
+      text-align: center;
+    }
+    .item-stats-column {
+      grid-column: 4;
+      text-align:;
     }

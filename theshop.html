@@ -6,28 +6,8 @@
 
     <style>
       
-      .shop-inventory {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        /* gap: 1rem; */
-      }
-
-      .category-title {
-        font-weight: 700;
-      }
-
-      .price-column {
-        grid-column: 1;
-      }
-      .item-column {
-        grid-column: 2;
-      }
-      .ability-column {
-        grid-column: 3;
-      }
-      .item-stats-column {
-        grid-column: 4;
+      .inv-price-styling {
+        color: rgb(211, 134, 41);
       }
     </style>
   </head>
@@ -58,19 +38,30 @@
             <div class="shop-inventory">
               <p class="price-column">
                 <label class="category-title">Price</label>
-                <br>4g 2s <br>2g 3s
+                <text class="inv-price-styling">
+                <br>2s 5c<br>2s 2c<br>2s 7c<br>2s 9c<br>3s 7c<br>3s 9c<br>3s 3c
+              </text>
               </p>
+
+
               <p class="item-column">
                 <label class="category-title">Item</label>
-                  <br>ruty dagger
+                  <br>ruty dagger<br>wooden shield<br>rusty sword<br>rusty mace
+                  <br>rusty greatsword &#40;2H&#41;<br>rusty maul &#40;2H&#41;
+                  <br>rusty polearm &#40;2H&#41;
               </p>
+
+
               <p class="ability-column">
                 <label class="category-title">Ability</label>     
-                <br>Pierce
+                <br>Pierce<br>Block<br>Slash<br>Crush<br>Slice<br>Smash<br>Stab
               </p>
+
+              
               <p class="item-stats-column">
                 <label class="category-title">Item Stats</label>
-                <br>+2 Dex
+                <br>+1 DMG, +1 DEX<br>+1 AGI<BR>+1 DMG, +1 STR<BR>+2 DMG<BR>+2 DMG, +2 STR
+                <BR>+3 DMG<BR>+2 DMG, +2 DEX
               </p>
             </div>
           </p>
