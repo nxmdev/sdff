@@ -173,6 +173,7 @@
     .dodge-example-styling {
       padding-left: 6rem;
       font-style: italic;
+      color: rgba(231, 180, 39, 0.875);
     }
 
     .offensive-ability-column {
