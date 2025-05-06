@@ -195,6 +195,7 @@
     }
     .side-text {     
       font-size: .9rem;
+      text-align: left;
     }
 
     button {
@@ -204,12 +205,13 @@
       border: solid;
       border-width: 1px;
       transition: background-color .3s;
-      transition: box-shadow .5s;
+      transition: box-shadow .5s;      
       font-size: 1rem;
+      font-family: 'Lora', serif;
     }
     button:hover {
       background-color: #e0cd9e;
-      box-shadow: inset 0px 0px 0px #e0cd9e;
+      box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.864);
       cursor: pointer;
     }
 
