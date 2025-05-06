@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+    <title>The Realm - A Solo TTRPG</title>
+    <!-- <link rel="stylesheet" href="CSS/styles.css"> -->
+
+    <style>
+      /* DEFAULT STYLING FOR WEBSITE */
+    header {
+      display: flex;
+      align-items: center;
+    }
+
+       
+    
+    nav {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      margin-left: 30px;
+    }    
+    .logo-img {
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    .nav-buttons {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: nowrap;      
+      align-items: flex-start;
+      font-size: 1.5rem;
+    }
+    .main-content {
+      flex: 0 0 80%;
+      padding-left: 10px;
+      padding-right: 10px;      
+      margin-right: 5px;
+      margin-top: 20px;
+      margin-left: 20px;     
+      background-color: rgb(33, 33, 33); 
+      border-style: double;
+      border-color: #fbefcf;
+      border-width: 3px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .main-text {     
+      text-align: center;
+    }
+
+    aside {
+      background-color: rgb(33, 33, 33);
+      border-style: double;
+      border-color: #fbefcf;
+      border-width: 3px;
+      border-radius: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    .side-text {     
+      font-size: .9rem;
+    }
+
+
+    .game-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);        
+      text-align: center;
+      align-items: center;
+    }
+    .game-feature-titlebox {
+      display: flex;
+      grid-column: span 2;     
+      align-items: center;
+      justify-content: center;  
+    }
+    .game-feature-titlebox h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+    .game-feature-maincontent1 {
+      grid-column: 1;
+      grid-row: 2;
+      color: #CD7F32;
+      margin-bottom: 2rem;
+      margin-top: 0rem;
+    }
+    .game-feature-maincontent2 {
+      grid-column: 2;
+      grid-row: 2;
+      color: #CD7F32;
+      margin-bottom: 2rem;
+      margin-top: 0rem;
+    }
+   
+    button {
+      background-color: #eaca71;
+      box-shadow: inset 0px 0px 7px black;
+      border-radius: 4px;
+      border: solid;
+      border-width: 1px;
+      transition: background-color .3s;
+      transition: box-shadow .5s;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #e0cd9e;
+      box-shadow: inset 0px 0px 0px #e0cd9e;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    
+  body {
+    background-color: #000; /* Black background */
+    color: #d4c7b0; /* A slightly brighter parchment-like color */
+    font-family: 'Lora', serif; /* A classic, readable serif font for general text */
+    margin: 0;
+    padding: 25px; /* Add some padding to the body */
+  }
+
+/* --- H1 Styles (Elegant Black Gold Feel) --- */
+
+h1 {
+  font-family: 'Cinzel', serif;
+  color: #C0A040; /* A darker, richer gold */
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  /* Text shadows to create depth and highlight/lowlight effect */
+  text-shadow:
+    -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
+    1px -1px 0 #222,   /* Top-right dark shadow */
+    -1px 1px 0 #222,   /* Bottom-left dark shadow */
+    1px 1px 0 #222,    /* Bottom-right dark shadow */
+    0 0 8px rgba(192, 160, 64, 0.4), /* Reduced subtle gold glow */
+    0 0 15px rgba(192, 160, 64, 0.2), /* Further reduced softer gold glow */
+    0 0 20px rgba(70, 8, 8, 0.15); /* Even more subtle dark red glow */
+  letter-spacing: 4px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #460808;
+  display: inline-block;
+  position: relative;
+}
+
+/* Add a subtle decorative element with a pseudo-element and dark red */
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #460808, transparent);
+}
+
+/* --- H2 Styles (Important Section Titles with Subtle Dark Red and Black Gold Feel) --- */
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #B8860B; /* A slightly darker gold for h2 */
+  font-size: 2.5em;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  /* Text shadows for black gold effect */
+  text-shadow:
+    -0.5px -0.5px 0 #222, /* Smaller dark shadows for h2 */
+    0.5px -0.5px 0 #222,
+    -0.5px 0.5px 0 #222,
+    0.5px 0.5px 0 #222,
+    0 0 6px rgba(184, 134, 11, 0.3), /* Reduced subtle gold glow */
+    0 0 8px rgba(70, 8, 8, 0.1); /* Even more subtle dark red glow */
+  letter-spacing: 2px;
+  border-bottom: 4px solid #460808;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Removed the ::before pseudo-element with the icon */
+
+/* --- H3 Styles (Subheadings with Subtle Dark Red and Black Gold Feel) --- */
+
+h3 {
+  font-family: 'EB Garamond', serif;
+  color: #D4AF37; /* A slightly brighter gold for h3 */
+  font-size: 1.8em;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  /* Text shadows for black gold effect */
+  text-shadow:
+    -0.3px -0.3px 0 #222, /* Even smaller dark shadows for h3 */
+    0.3px -0.3px 0 #222,
+    -0.3px 0.3px 0 #222,
+    0.3px 0.3px 0 #222,
+    0 0 4px rgba(212, 175, 55, 0.3), /* Reduced subtle gold glow */
+    0 0 6px rgba(70, 8, 8, 0.08); /* Very subtle dark red glow */
+  border-bottom: 1px dashed #460808;
+  padding-bottom: 8px;
+  position: relative;
+}
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-img">
+        <a href="index.html"><img src="images/123.jfif"></a>
+      </div>
+
+      <nav>              
+        <a href="abilities.html"><button>Abilities</button></a>
+        <a href="bounties.html"><button>Bounties</button></a>
+        <a href="combat.html"><button>Combat</button></a>        
+        <a href="theshop.html"><button>The Shop</button></a>
+        <!-- <a href="signin.html"><button>Sign In</button></a> -->
+        <!-- <a href="skills.html"><button>Skills</button></a> -->
+        <a href="stats.html"><button>Statistics</button></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <h1>Test Page</h1>
+        <p class="main-text">
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+            <br><br>
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+            This page is used to test fonts, layout, designs, and other features before full implementation.
+        </p>
+        <div class="game-features">
+          <div class="game-feature-titlebox">
+            <h2>Title, I take up 1x2 rowXcolumn</h2>
+          </div>
+          <p class="game-feature-maincontent1">
+            &#9830; In-Depth Character Customization &#9830;<br>
+            &#9830; Meaningful Gear Progression &#9830;<br>
+            &#9830; Diverse and Effective Character Builds &#9830;<br>
+            &#9830; Classless Skill Progression &#9830;<br>
+            &#9830; Many Zones with Unique Mobs and Loot &#9830;<br>
+          </p>
+          <p class="game-feature-maincontent2">
+            &#9830; Dynamic Evasion and Guard Mechanics &#9830;<br>            
+            &#9830; Strategic Armor Mechanics &#9830;<br>
+            &#9830; Skill-Based Combat Mastery &#9830;<br>
+            &#9830; Each Mob Full Character Sheet with Loot &#9830;<br>
+            &#9830; Long Campaign Format &#9830;<br>
+          </p>
+        </div>
+      </div>
+
+      <aside>
+        <h3>Links</h3>
+        <p class="side-text">  
+          Below are some links to the Learning HTML and CSS class I'm working on.
+          <br>  <br>    
+          <a href="example.html"><button class="nav-buttons">Example Project</button></a>
+          <a href="buttons.html"><button class="nav-buttons">Buttons Example Page</button></a>  
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>

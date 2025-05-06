@@ -1,20 +1,91 @@
-    @charset "UTF-8";
+    @charset "UTF-8";    
 
-    /* Main Styling for the entire website */
+    /* DEFAULT STYLING FOR WEBSITE */
     header {
       display: flex;
       align-items: center;
     }
 
     body {
-      background-color: #000000; /* Light gray background */
-      margin: 0; /* Remove default body margin */
-      padding: 0; /* Remove default body padding */
-      font-size: 1.15rem;      
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-      color: #fbefcf;      
-    }    
+      background-color: #000; /* Black background */
+      color: #d4c7b0; /* A slightly brighter parchment-like color */
+      font-family: 'Lora', serif; /* A classic, readable serif font for general text */
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+  /* --- H1 Styles (Elegant Black Gold Feel) --- */
+  
+    h1 {
+      font-family: 'Cinzel', serif;
+      color: #cdac4a; /* A darker, richer gold */
+      font-size: 4rem;
+      text-align: center;
+      /* Text shadows to create depth and highlight/lowlight effect */
+      text-shadow:
+        -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
+        1px -1px 0 #222,   /* Top-right dark shadow */
+        -1px 1px 0 #222,   /* Bottom-left dark shadow */
+        1px 1px 0 #222,    /* Bottom-right dark shadow */
+        0 0 8px rgba(192, 160, 64, 0.4), /* Reduced subtle gold glow */
+        0 0 15px rgba(192, 160, 64, 0.2), /* Further reduced softer gold glow */
+        0 0 20px rgba(70, 8, 8, 0.15); /* Even more subtle dark red glow */
+      letter-spacing: 4px;
+      border-bottom: 3px solid #460808;
+      display: inline-block;
+      position: relative;
+    }
     
+    /* Add a subtle decorative element with a pseudo-element and dark red */
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      height: 5px;
+      background: linear-gradient(to right, transparent, #460808, transparent);
+    }
+    
+    /* --- H2 Styles (Important Section Titles with Subtle Dark Red and Black Gold Feel) --- */
+    
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #B8860B; /* A slightly darker gold for h2 */
+      font-size: 3.2rem;
+      /* Text shadows for black gold effect */
+      text-shadow:
+        -0.5px -0.5px 0 #222, /* Smaller dark shadows for h2 */
+        0.5px -0.5px 0 #222,
+        -0.5px 0.5px 0 #222,
+        0.5px 0.5px 0 #222,
+        0 0 6px rgba(184, 134, 11, 0.3), /* Reduced subtle gold glow */
+        0 0 8px rgba(70, 8, 8, 0.1); /* Even more subtle dark red glow */
+      letter-spacing: 2px;
+      border-bottom: 4px solid #460808;
+      position: relative;
+    }
+    
+    /* Removed the ::before pseudo-element with the icon */
+    
+    /* --- H3 Styles (Subheadings with Subtle Dark Red and Black Gold Feel) --- */
+    
+    h3 {
+      font-family: 'EB Garamond', serif;
+      color: #D4AF37; /* A slightly brighter gold for h3 */
+      font-size: 2rem;
+      /* Text shadows for black gold effect */
+      text-shadow:
+        -0.3px -0.3px 0 #222, /* Even smaller dark shadows for h3 */
+        0.3px -0.3px 0 #222,
+        -0.3px 0.3px 0 #222,
+        0.3px 0.3px 0 #222,
+        0 0 4px rgba(212, 175, 55, 0.3), /* Reduced subtle gold glow */
+        0 0 6px rgba(70, 8, 8, 0.08); /* Very subtle dark red glow */
+      position: relative;
+    }
+      
     nav {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -35,7 +106,7 @@
       display: flex;
       flex-wrap: nowrap;      
       align-items: flex-start;
-      font-size: 1.5rem;
+      /* font-size: 1.5rem; */
     }
     .main-content {
       flex: 0 0 80%;
@@ -49,8 +120,6 @@
       border-color: #fbefcf;
       border-width: 3px;
       border-radius: 12px;
-    }
-    .main-text {     
       text-align: center;
     }
 
@@ -67,21 +136,6 @@
     }
     .side-text {     
       font-size: .9rem;
-    }
-
-    h1 {
-      font-family: Copperplate, Papyrus, fantasy;
-      color: #ffdd7f;
-      font-weight: 500;
-      text-shadow: 0px 0px 5px #ff0000;
-      text-align: center;
-      font-size: 3rem;
-    }
-    h2 { 
-      font-family: Copperplate, Papyrus, fantasy;
-      color: #ffdd7f;
-      font-weight: 500;
-      text-shadow: 0px 0px 5px #ff0000;
     }
 
     button {
@@ -103,28 +157,77 @@
     a {
       text-decoration: none;
     }
+    p {
+      margin-top: 0;
+    }
 
 
+    /* INDEX-WELCOME PAGE STYLING */
+    .game-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);        
+      text-align: center;
+      grid-template-rows: auto;
+    }
+    .game-feature-titlebox {
+      display: flex;
+      grid-column: 1 / 3;     
+      font-weight: 500;
+      font-size: 2rem;
+      color: rgba(231, 180, 39, 0.875); 
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      align-items: center;
+      justify-content: center;       
+    }
+    .game-feature-titlebox h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .game-feature-maincontent1 {
+      grid-column: 1;
+      grid-row: 2;
+      color: rgba(231, 180, 39, 0.875);
+      margin-bottom: 2rem;
+      margin-top: 0rem;
+    }
+    .game-feature-maincontent2 {
+      grid-column: 2;
+      grid-row: 2;
+      color: rgba(231, 180, 39, 0.875);
+      margin-bottom: 2rem;
+      margin-top: 0rem;
+    }
+    .secondary-highlighted-text {
+      color: rgba(231, 180, 39, 0.875);
+      font-style: italic;
+    }
+    
+    
     /* STATISTICS PAGE STYLING */
     .stats-info {        
       text-align: left;
-      /* margin-left: 10px; */
       padding-left: 6rem;
     }
 
     .stats-style {
-      color: #b8b443;
+      color: rgba(231, 180, 39, 0.875);
     }
 
 
     /* BOUNTIES PAGE STYLING */    
     .checkbox-layout {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);      
     }
 
+    .sign-in-bounty-footer {
+      font-style: italic;
+      font-size: 1.2rem;
+      padding-top: 1rem;
+    }
 
     /* THE SHOP PAGE STYLING */
     .shop-inventory {
@@ -145,12 +248,13 @@
     }
     .item-column {
       grid-column: 3;
+      width: 110%;
       color: rgba(255, 255, 255, 0.791);
     }
     .ability-column {
       grid-column: 4;
       text-align: center;
-      color: #d1cc42;
+      color: rgba(231, 180, 39, 0.875);
     }
     .item-stats-column {
       grid-column: 5;
@@ -167,11 +271,16 @@
       text-align: center;
     }      
     .ability-text-styling {
-      color: #d1cc42;
+      color: rgba(231, 180, 39, 0.875);
     }
 
     .dodge-example-styling {
+      font-style: italic;
+      color: rgba(231, 180, 39, 0.875);
+      text-align: left;
       padding-left: 6rem;
+    }
+    .retalitory-strike-example {
       font-style: italic;
       color: rgba(231, 180, 39, 0.875);
     }
