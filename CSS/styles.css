@@ -16,37 +16,49 @@
   
   /* --- H1 Styles (Elegant Black Gold Feel) --- */
   
-    h1 {
-      font-family: 'Cinzel', serif;
-      color: #cdac4a; /* A darker, richer gold */
-      font-size: 4rem;
-      text-align: center;
-      /* Text shadows to create depth and highlight/lowlight effect */
-      text-shadow:
-        -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
-        1px -1px 0 #222,   /* Top-right dark shadow */
-        -1px 1px 0 #222,   /* Bottom-left dark shadow */
-        1px 1px 0 #222,    /* Bottom-right dark shadow */
-        0 0 8px rgba(192, 160, 64, 0.4), /* Reduced subtle gold glow */
-        0 0 15px rgba(192, 160, 64, 0.2), /* Further reduced softer gold glow */
-        0 0 20px rgba(70, 8, 8, 0.15); /* Even more subtle dark red glow */
-      letter-spacing: 4px;
-      border-bottom: 3px solid #460808;
-      display: inline-block;
-      position: relative;
-    }
-    
-    /* Add a subtle decorative element with a pseudo-element and dark red */
-    h1::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 85%;
-      height: 5px;
-      background: linear-gradient(to right, transparent, #460808, transparent);
-    }
+  h1 {
+    font-family: 'Cinzel', serif;
+    color: #cdac4a; /* A darker, richer gold */
+    font-size: 4rem;
+    text-align: center;
+    /* Text shadows to create depth and highlight/lowlight effect */
+    text-shadow:
+      -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
+      1px -1px 0 #222,   /* Top-right dark shadow */
+      -1px 1px 0 #222,   /* Bottom-left dark shadow */
+      1px 1px 0 #222,    /* Bottom-right dark shadow */
+      0 0 8px rgba(192, 160, 64, 0.4), /* Reduced subtle gold glow */
+      0 0 15px rgba(192, 160, 64, 0.2), /* Further reduced softer gold glow */
+      0 0 20px rgba(70, 8, 8, 0.15); /* Even more subtle dark red glow */
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Modify the ::after pseudo-element to be the golden underline with shadow */
+  h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value to control the spacing below the text */
+    left: 0; /* Position the underline at the left edge of the h1 */
+    width: 100%; /* Make the underline the width of the h1 content */
+    height: 2px; /* Thickness of the golden line */
+    background-color: #E0C462; /* Your golden color for the underline */
+    /* Apply the box-shadow directly to the ::after pseudo-element */
+    box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
+  }
+  
+  /* Add a separate pseudo-element for the subtle dark red decorative element */
+  h1::before { /* Using ::before for the red element to avoid conflict */
+    content: '';
+    position: absolute;
+    bottom: -12px; /* Adjust this value to position it below the golden line */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, #460808, transparent);
+  }
     
     /* --- H2 Styles (Important Section Titles with Subtle Dark Red and Black Gold Feel) --- */
     
@@ -66,6 +78,29 @@
       border-bottom: 4px solid #460808;
       position: relative;
     }
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px; /* Adjust this value to control the spacing below the text */
+      left: 0; /* Position the underline at the left edge of the h1 */
+      width: 100%; /* Make the underline the width of the h1 content */
+      height: 2px; /* Thickness of the golden line */
+      background-color: #E0C462; /* Your golden color for the underline */
+      /* Apply the box-shadow directly to the ::after pseudo-element */
+      box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
+    }
+    
+    /* Add a separate pseudo-element for the subtle dark red decorative element */
+    h2::before { /* Using ::before for the red element to avoid conflict */
+      content: '';
+      position: absolute;
+      bottom: -12px; /* Adjust this value to position it below the golden line */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      height: 5px;
+      background: linear-gradient(to right, transparent, #460808, transparent);
+    }
     
     /* Removed the ::before pseudo-element with the icon */
     
@@ -84,6 +119,29 @@
         0 0 4px rgba(212, 175, 55, 0.3), /* Reduced subtle gold glow */
         0 0 6px rgba(70, 8, 8, 0.08); /* Very subtle dark red glow */
       position: relative;
+    }
+    h3::after {
+      content: '';
+      position: absolute;
+      bottom: -5px; /* Adjust this value to control the spacing below the text */
+      left: 0; /* Position the underline at the left edge of the h1 */
+      width: 100%; /* Make the underline the width of the h1 content */
+      height: 2px; /* Thickness of the golden line */
+      background-color: #E0C462; /* Your golden color for the underline */
+      /* Apply the box-shadow directly to the ::after pseudo-element */
+      box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
+    }
+    
+    /* Add a separate pseudo-element for the subtle dark red decorative element */
+    h3::before { /* Using ::before for the red element to avoid conflict */
+      content: '';
+      position: absolute;
+      bottom: -12px; /* Adjust this value to position it below the golden line */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      height: 5px;
+      background: linear-gradient(to right, transparent, #460808, transparent);
     }
       
     nav {
@@ -133,6 +191,7 @@
       padding-right: 10px;
       margin-right: 20px;
       margin-top: 20px;
+      text-align: center;
     }
     .side-text {     
       font-size: .9rem;
