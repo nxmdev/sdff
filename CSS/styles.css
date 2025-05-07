@@ -12,56 +12,49 @@
       font-family: 'Lora', serif; /* A classic, readable serif font for general text */
       margin: 0;
       font-size: 1.5rem;
-    }
-  
-  /* --- H1 Styles (Elegant Black Gold Feel) --- */
-  
-  h1 {
-    font-family: 'Cinzel', serif;
-    color: #cdac4a; /* A darker, richer gold */
-    font-size: 4rem;
-    text-align: center;
-    /* Text shadows to create depth and highlight/lowlight effect */
-    text-shadow:
-      -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
-      1px -1px 0 #222,   /* Top-right dark shadow */
-      -1px 1px 0 #222,   /* Bottom-left dark shadow */
-      1px 1px 0 #222,    /* Bottom-right dark shadow */
-      0 0 8px rgba(192, 160, 64, 0.4), /* Reduced subtle gold glow */
-      0 0 15px rgba(192, 160, 64, 0.2), /* Further reduced softer gold glow */
-      0 0 20px rgba(70, 8, 8, 0.15); /* Even more subtle dark red glow */
-    letter-spacing: 4px;
-    display: inline-block;
-    position: relative;
-  }
-  
-  /* Modify the ::after pseudo-element to be the golden underline with shadow */
-  h1::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* Adjust this value to control the spacing below the text */
-    left: 0; /* Position the underline at the left edge of the h1 */
-    width: 100%; /* Make the underline the width of the h1 content */
-    height: 2px; /* Thickness of the golden line */
-    background-color: #E0C462; /* Your golden color for the underline */
-    /* Apply the box-shadow directly to the ::after pseudo-element */
-    box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
-  }
-  
-  /* Add a separate pseudo-element for the subtle dark red decorative element */
-  h1::before { /* Using ::before for the red element to avoid conflict */
-    content: '';
-    position: absolute;
-    bottom: -12px; /* Adjust this value to position it below the golden line */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    height: 5px;
-    background: linear-gradient(to right, transparent, #460808, transparent);
-  }
+    } 
     
-    /* --- H2 Styles (Important Section Titles with Subtle Dark Red and Black Gold Feel) --- */
-    
+    h1 {
+      font-family: 'Cinzel', serif;
+      color: #cdac4a; /* A darker, richer gold */
+      font-size: 4rem;
+      text-align: center;
+      /* Text shadows to create depth and highlight/lowlight effect */
+      text-shadow:
+        -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
+        1px -1px 0 #222,   /* Top-right dark shadow */
+        -1px 1px 0 #222,   /* Bottom-left dark shadow */
+        1px 1px 0 #222,    /* Bottom-right dark shadow */
+        0 0 8px rgba(192, 160, 64, 0.4), /* Reduced subtle gold glow */
+        0 0 15px rgba(192, 160, 64, 0.2), /* Further reduced softer gold glow */
+        0 0 20px rgba(70, 8, 8, 0.15); /* Even more subtle dark red glow */
+      letter-spacing: 4px;
+      display: inline-block;
+      position: relative;
+    }    
+    /* Modify the ::after pseudo-element to be the golden underline with shadow */
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: -5px; /* Adjust this value to control the spacing below the text */
+      left: 0; /* Position the underline at the left edge of the h1 */
+      width: 100%; /* Make the underline the width of the h1 content */
+      height: 2px; /* Thickness of the golden line */
+      background-color: #E0C462; /* Your golden color for the underline */
+      /* Apply the box-shadow directly to the ::after pseudo-element */
+      box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
+    }    
+    /* Add a separate pseudo-element for the subtle dark red decorative element */
+    h1::before { /* Using ::before for the red element to avoid conflict */
+      content: '';
+      position: absolute;
+      bottom: -12px; /* Adjust this value to position it below the golden line */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      height: 5px;
+      background: linear-gradient(to right, transparent, #460808, transparent);
+    }    
     h2 {
       font-family: 'Cormorant Garamond', serif;
       color: #B8860B; /* A slightly darker gold for h2 */
@@ -88,8 +81,7 @@
       background-color: #E0C462; /* Your golden color for the underline */
       /* Apply the box-shadow directly to the ::after pseudo-element */
       box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
-    }
-    
+    }    
     /* Add a separate pseudo-element for the subtle dark red decorative element */
     h2::before { /* Using ::before for the red element to avoid conflict */
       content: '';
@@ -101,11 +93,6 @@
       height: 5px;
       background: linear-gradient(to right, transparent, #460808, transparent);
     }
-    
-    /* Removed the ::before pseudo-element with the icon */
-    
-    /* --- H3 Styles (Subheadings with Subtle Dark Red and Black Gold Feel) --- */
-    
     h3 {
       font-family: 'EB Garamond', serif;
       color: #D4AF37; /* A slightly brighter gold for h3 */
@@ -131,7 +118,6 @@
       /* Apply the box-shadow directly to the ::after pseudo-element */
       box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
     }
-    
     /* Add a separate pseudo-element for the subtle dark red decorative element */
     h3::before { /* Using ::before for the red element to avoid conflict */
       content: '';
@@ -178,7 +164,16 @@
       border-color: #fbefcf;
       border-width: 3px;
       border-radius: 12px;
+    }
+    .main-content-intro {
       text-align: center;
+    }
+    .main-content-outro {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
 
     aside {
@@ -206,7 +201,7 @@
       border-width: 1px;
       transition: background-color .3s;
       transition: box-shadow .5s;      
-      font-size: 1rem;
+      font-size: 1.45rem;
       font-family: 'Lora', serif;
     }
     button:hover {
@@ -264,67 +259,8 @@
       color: rgba(231, 180, 39, 0.875);
       font-style: italic;
     }
+
     
-    
-    /* STATISTICS PAGE STYLING */
-    .stats-info {        
-      text-align: left;
-      padding-left: 6rem;
-    }
-
-    .stats-style {
-      color: rgba(231, 180, 39, 0.875);
-    }
-
-
-    /* BOUNTIES PAGE STYLING */    
-    .checkbox-layout {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      grid-template-rows: repeat(2, auto);      
-    }
-
-    .sign-in-bounty-footer {
-      font-style: italic;
-      font-size: 1.2rem;
-      padding-top: 1rem;
-    }
-
-    /* THE SHOP PAGE STYLING */
-    .shop-inventory {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      justify-items: center;
-    }
-    /* this is a label */
-    .category-title {
-      font-weight: 700;
-      text-decoration: underline;
-      font-size: 1.7rem;
-      color: #fbefcf;
-    }
-    .price-column {
-      grid-column: 2;
-      text-align: center;
-    }
-    .item-column {
-      grid-column: 3;
-      width: 110%;
-      color: rgba(255, 255, 255, 0.791);
-    }
-    .ability-column {
-      grid-column: 4;
-      text-align: center;
-      color: rgba(231, 180, 39, 0.875);
-    }
-    .item-stats-column {
-      grid-column: 5;
-      color: #f7e0a0;
-    }
-    .inv-price-styling {
-      color: rgb(211, 134, 41);
-    }
-
     /* ABILITIES PAGE STYLING */    
     .ability-chart {
       display: grid;
@@ -351,8 +287,64 @@
     }
 
 
+    /* BOUNTIES PAGE STYLING */    
+    .checkbox-layout {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);      
+    }
+
+
     /* COMBAT PAGE STYLING */  
     .combat-example-styling {
       font-weight: 700;
+      color: rgba(231, 180, 39, 0.875);
+    }
+
+
+    /* THE SHOP PAGE STYLING */
+    .shop-inventory {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+    /* this is a label */
+    .category-title {
+      font-weight: 700;
+      text-decoration: underline;
+      font-size: 1.7rem;
+      color: #fbefcf;
+    }
+    .price-column {
+      grid-column: 1;
+      text-align: center;
+    }
+    .item-column {
+      grid-column: 2;
+      color: rgba(255, 255, 255, 0.791);
+      text-align: center;
+    }
+    .ability-column {
+      grid-column: 3;
+      text-align: center;
+      color: rgba(231, 180, 39, 0.875);
+    }
+    .item-stats-column {
+      grid-column: 4;
+      color: #f7e0a0;
+      text-align: center;
+    }
+    .inv-price-styling {
+      color: rgb(211, 134, 41);
+    }
+
+     /* STATISTICS PAGE STYLING */
+     .stats-info {        
+      text-align: left;
+      padding-left: 6rem;
+    }
+
+    .stats-style {
       color: rgba(231, 180, 39, 0.875);
     }
