@@ -275,6 +275,7 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       text-align: center;
+      margin-bottom: 1rem;
     }      
     .ability-text-styling {
       color: rgba(231, 180, 39, 0.875);
@@ -322,6 +323,8 @@
       grid-template-columns: repeat(4, auto);
       margin-left: 5rem;
       margin-right: 5rem;  
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       font-size: 1.7vw;    
     }
     /* this is a label */
@@ -358,6 +361,8 @@
      .stats-info {        
       text-align: left;
       padding-left: 6rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     .stats-style {
