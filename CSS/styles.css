@@ -31,6 +31,8 @@
       letter-spacing: 4px;
       display: inline-block;
       position: relative;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     }    
     /* Modify the ::after pseudo-element to be the golden underline with shadow */
     h1::after {
@@ -108,6 +110,8 @@
         0 0 4px rgba(212, 175, 55, 0.3), /* Reduced subtle gold glow */
         0 0 6px rgba(70, 8, 8, 0.08); /* Very subtle dark red glow */
       position: relative;
+      margin-top: 0;
+      margin-bottom: 1rem;
     }
     h3::after {
       content: '';
