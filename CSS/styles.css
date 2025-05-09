@@ -308,6 +308,7 @@
       grid-template-columns: repeat(3, auto);
       grid-template-rows: repeat(2, auto);   
       margin-top: 1rem;   
+      font-size: 1.7vw;
     }
 
 
