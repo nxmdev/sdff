@@ -321,13 +321,14 @@
       display: grid;
       grid-template-columns: repeat(4, auto);
       margin-left: 5rem;
-      margin-right: 5rem;
+      margin-right: 5rem;  
+      font-size: 1.7vw;    
     }
     /* this is a label */
     .category-title {
       font-weight: 700;
       text-decoration: underline;
-      font-size: 1.7rem;
+      /* font-size: 1.7rem; */
       color: #fbefcf;
     }
     .price-column {
