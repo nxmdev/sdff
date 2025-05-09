@@ -17,7 +17,7 @@
     h1 {
       font-family: 'Cinzel', serif;
       color: #cdac4a; /* A darker, richer gold */
-      font-size: 4rem;
+      font-size: 5rem;
       text-align: center;
       /* Text shadows to create depth and highlight/lowlight effect */
       text-shadow:
@@ -58,7 +58,7 @@
     h2 {
       font-family: 'Cormorant Garamond', serif;
       color: #B8860B; /* A slightly darker gold for h2 */
-      font-size: 3.2rem;
+      font-size: 4rem;
       /* Text shadows for black gold effect */
       text-shadow:
         -0.5px -0.5px 0 #222, /* Smaller dark shadows for h2 */
@@ -70,6 +70,8 @@
       letter-spacing: 2px;
       border-bottom: 4px solid #460808;
       position: relative;
+      margin-top: 0;
+      margin-bottom: 1rem;
     }
     h2::after {
       content: '';
@@ -96,7 +98,7 @@
     h3 {
       font-family: 'EB Garamond', serif;
       color: #D4AF37; /* A slightly brighter gold for h3 */
-      font-size: 2rem;
+      font-size: 3rem;
       /* Text shadows for black gold effect */
       text-shadow:
         -0.3px -0.3px 0 #222, /* Even smaller dark shadows for h3 */
@@ -286,6 +288,11 @@
 
     .offensive-ability-column {
       grid-column: 2;
+    }
+
+    .ability-title-styling {
+      color: #e7c040;
+      text-shadow: 0px 0px 5px #ff0000;
     }
 
 
