@@ -321,31 +321,39 @@
       padding: 1.5rem;
       border: 1px solid rgb(244, 200, 22);
       border-radius: 44px;
-      background-color: #231b07;
+      background-color: #473b1d;
     }
     .combat-box-two {
       display: flex;
       text-align: right;
-      width: 65%;
+      max-width: 65%;
+      min-width: 45%;
       margin-left: 30%;
       /* padding-right: 0.5rem; */
       padding: 1.5rem;
       border: 1px solid rgb(244, 200, 22);
       border-radius: 44px;
-      background-color: #231b07;
+      background-color: #3c2c04;
     }
     .combat-box-three {
       display: flex;
       text-align: center;
       min-width: 45%;
       max-width: 65%;
-      margin-left: 28%;
+      margin-left: 40%;
       color: rgba(231, 180, 39, 0.875);
     }    
     .combat-centeralign-text {
       text-align: center;
       margin-bottom: 1rem;
     }    
+    .defensive-example {
+      /* text-align: center; */
+      /* justify-content: center; */
+      /* display: inline-block;
+      border: 1px solid yellow;
+      margin-left: 15%; */
+    }
 
 
     /* THE SHOP PAGE STYLING */
