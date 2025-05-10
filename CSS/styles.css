@@ -227,17 +227,16 @@
     /* INDEX-WELCOME PAGE STYLING */
     .game-features {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);        
+      grid-template-columns: repeat(2, 1fr);    
       text-align: center;
       grid-template-rows: auto;
+      column-gap: 0;
+      font-size: 1.8vw;
     }
     .game-feature-titlebox {
       display: flex;
       grid-column: 1 / 3;     
       font-weight: 500;
-      font-size: 2rem;
-      color: rgba(231, 180, 39, 0.875); 
       margin-top: 0;
       margin-bottom: 1rem;
       align-items: center;
