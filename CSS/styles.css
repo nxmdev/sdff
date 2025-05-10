@@ -6,6 +6,9 @@
       }
     }
 
+
+    /*-----------------------------*/
+    /*-----------------------------*/
     /* DEFAULT STYLING FOR WEBSITE */
     header {
       display: flex;
@@ -170,7 +173,6 @@
       display: flex;
       flex-wrap: nowrap;      
       align-items: flex-start;
-      /* font-size: 1.5rem; */
     }
     .main-content {
       flex: 0 0 80%;
@@ -370,6 +372,13 @@
     }    
 
 
+    /*----------------------------*/
+    /*----------------------------*/
+    /* THE DEATH EFFECTS PAGE STYLING */
+    .death-effects {
+      text-align: left;
+    }    
+    
     /*----------------------------*/
     /*----------------------------*/
     /* THE SHOP PAGE STYLING */
