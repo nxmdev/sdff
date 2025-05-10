@@ -1,5 +1,11 @@
     @charset "UTF-8";    
 
+    @media (max-width: 768px) {
+      aside {
+        display: none;
+      }
+    }
+
     /* DEFAULT STYLING FOR WEBSITE */
     header {
       display: flex;
@@ -231,7 +237,8 @@
       margin: 0;
     }
 
-
+    /*----------------------------*/
+    /*----------------------------*/
     /* INDEX-WELCOME PAGE STYLING */
     .game-features {
       display: grid;
@@ -274,6 +281,8 @@
     }
 
     
+    /*----------------------------*/
+    /*----------------------------*/
     /* ABILITIES PAGE STYLING */    
     .ability-chart {
       display: grid;
@@ -306,6 +315,8 @@
     }
 
 
+    /*----------------------------*/
+    /*----------------------------*/
     /* BOUNTIES PAGE STYLING */    
     .checkbox-layout {
       display: grid;
@@ -316,6 +327,8 @@
     }
 
 
+    /*----------------------------*/
+    /*----------------------------*/
     /* COMBAT PAGE STYLING */  
     .combat-example-styling {
       font-weight: 700;
@@ -357,6 +370,8 @@
     }    
 
 
+    /*----------------------------*/
+    /*----------------------------*/
     /* THE SHOP PAGE STYLING */
     .shop-inventory {
       display: grid;
@@ -397,6 +412,9 @@
       color: rgb(211, 134, 41);
     }
 
+    
+    /*----------------------------*/
+    /*----------------------------*/
      /* STATISTICS PAGE STYLING */
      .stats-info {        
       text-align: left;
