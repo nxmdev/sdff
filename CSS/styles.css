@@ -157,7 +157,7 @@
     }
     .navbar-two {
       display: grid;
-      justify-items: right;
+      justify-items: left;
     }
 
     main {
