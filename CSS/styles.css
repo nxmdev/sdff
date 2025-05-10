@@ -164,9 +164,6 @@
       padding-left: 0.5rem;
       padding-right: 0.5rem;      
       margin: 1rem;
-      /* margin-top: 1rem; */
-      /* margin-left: 1rem;    */
-      /* margin-bottom: 1rem;   */
       background-color: rgb(33, 33, 33); 
       border-style: double;
       border-color: #fbefcf;
@@ -316,7 +313,33 @@
     .combat-example-styling {
       font-weight: 700;
       color: rgba(231, 180, 39, 0.875);
+      text-align: center;
     }
+    .combat-box-one {
+      display: flex;
+      text-align: left;
+      width: 65%;
+      padding-left: 0.5rem;
+    }
+    .combat-box-two {
+      display: flex;
+      text-align: right;
+      width: 65%;
+      margin-left: 34%;
+      padding-right: 0.5rem;
+    }
+    .combat-box-three {
+      display: flex;
+      text-align: center;
+      min-width: 45%;
+      max-width: 65%;
+      margin-left: 28%;
+      color: rgba(231, 180, 39, 0.875);
+    }    
+    .combat-centeralign-text {
+      text-align: center;
+      margin-bottom: 1rem;
+    }    
 
 
     /* THE SHOP PAGE STYLING */
