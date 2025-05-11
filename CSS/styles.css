@@ -246,6 +246,9 @@
     p {
       margin: 0;
     }
+    i {
+      font-size: 1.3rem;
+    }
 
     /*----------------------------*/
     /*----------------------------*/
@@ -357,6 +360,7 @@
     }
     .combat-box-two {
       display: flex;
+      flex-direction: column;
       text-align: right;
       max-width: 65%;
       min-width: 45%;
@@ -369,15 +373,17 @@
     }
     .combat-box-three {
       display: flex;
+      justify-content: center;
       text-align: center;
-      min-width: 45%;
+      /* min-width: 45%;
       max-width: 65%;
-      margin-left: 40%;
+      margin-left: 40%; */
       color: rgba(231, 180, 39, 0.875);
     }    
     .combat-centeralign-text {
       text-align: center;
       margin-bottom: 1rem;
+      font-size: 1.8rem;
     }    
 
 
