@@ -353,6 +353,7 @@
       border: 1px solid rgb(244, 200, 22);
       border-radius: 44px;
       background-color: #473b1d;
+      flex-direction: column;
     }
     .combat-box-two {
       display: flex;
