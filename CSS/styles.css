@@ -22,6 +22,9 @@
       font-family: 'Lora', serif; /* A classic, readable serif font for general text */
       margin: 0;
       font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     } 
     
     h1 {
@@ -173,13 +176,10 @@
 
     main {
       display: flex;
-      flex-wrap: nowrap;      
-      align-items: flex-start;
       justify-content: center;
     }
     .main-content {
-      max-width: 80%;
-      min-width: 70%;
+      width: 80%;
       padding-left: 0.5rem;
       padding-right: 0.5rem;      
       margin-left: 9%;
