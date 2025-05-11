@@ -181,7 +181,8 @@
     .main-content {
       width: 80%;
       padding-left: 0.5rem;
-      padding-right: 0.5rem;      
+      padding-right: 0.5rem;   
+      padding-bottom: 1rem;   
       margin-left: 9%;
       margin-top: 1rem;
       margin-right: 9%;
@@ -245,9 +246,14 @@
     }
     p {
       margin: 0;
+      padding: 0;
     }
     i {
       font-size: 1.3rem;
+    }
+    div {
+      padding: 0;
+      margin: 0;
     }
 
     /*----------------------------*/
@@ -365,7 +371,6 @@
       max-width: 65%;
       min-width: 45%;
       margin-left: 30%;
-      /* padding-right: 0.5rem; */
       padding: 1.5rem;
       border: 1px solid rgb(244, 200, 22);
       border-radius: 44px;
@@ -375,9 +380,6 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      /* min-width: 45%;
-      max-width: 65%;
-      margin-left: 40%; */
       color: rgba(231, 180, 39, 0.875);
     }    
     .combat-centeralign-text {
