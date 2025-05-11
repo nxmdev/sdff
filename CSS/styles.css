@@ -452,3 +452,8 @@
     .stats-style {
       color: rgba(231, 180, 39, 0.875);
     }
+    .charsheet-img {  
+      display: flex;    
+      flex-direction: column;
+      align-items: center;
+    }
