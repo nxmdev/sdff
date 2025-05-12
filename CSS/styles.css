@@ -32,6 +32,7 @@
       color: #cdac4a; /* A darker, richer gold */
       font-size: 5rem;
       text-align: center;
+      word-break: break-word;
       /* Text shadows to create depth and highlight/lowlight effect */
       text-shadow:
         -1px -1px 0 #222,  /* Top-left dark shadow (mimics raised edge) */
@@ -148,7 +149,7 @@
     nav {
       display: flex;      
     }
-    
+
     .logo-img-properties {
       width: 20rem;
       height: auto;
