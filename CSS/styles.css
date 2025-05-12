@@ -151,7 +151,7 @@
     }
 
     .logo-img-properties {
-      width: 20rem;
+      width: 20.5rem;
       height: auto;
     }
     .nav-left-side {
@@ -236,7 +236,7 @@
       border-width: 1px;
       transition: background-color .3s;
       transition: box-shadow .5s;      
-      font-size: 80%;
+      font-size: 75%;
       font-family: 'Lora', serif;
       padding: 0.5rem;
       width: 9rem;
@@ -283,12 +283,10 @@
       font-size: 1.8vw;
     }
     .game-feature-titlebox {
-      display: flex;
       grid-column: 1 / 3;     
       font-weight: 500;
       margin-top: 0;
       margin-bottom: 1rem;
-      align-items: center;
       justify-content: center;       
     }
     .game-feature-titlebox h2 {
@@ -461,6 +459,33 @@
     .death-effects {
       text-align: left;
     }    
+
+    
+    /*----------------------------*/
+    /*----------------------------*/
+    /* ENCHANTING    PAGE STYLING */  
+    .enchant-grid {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      margin-top: 1rem;
+    }
+    .enchant-price-column {      
+      grid-column: 1;
+      color: rgba(211, 134, 41, 0.791);
+    }
+    .enchant-name-column {
+      grid-column: 2;
+      color: rgba(255, 255, 255, 0.791);
+    }
+    .enchant-effect-column {
+      grid-column: 3;
+      color: #f7e0a0;
+    }
+    .enchant-application {
+      grid-column: 4;
+      color: rgba(231, 180, 39, 0.875);
+    }
+    
     
     /*----------------------------*/
     /*----------------------------*/
