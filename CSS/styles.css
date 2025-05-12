@@ -144,15 +144,7 @@
    
    /*-------------------*/
    /*-------------------*/
-    /* NAV BAR BULLSHIT */   
-    nav {
-      display: flex;      
-    }
-    /* .logo-img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    } */
+    /* NAV BAR BULLSHIT */ 
     .logo-img-properties {
       width: 20rem;
       height: auto;
