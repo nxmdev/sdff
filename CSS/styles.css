@@ -514,7 +514,7 @@
       grid-column: 2;
     }
     .potion-effect-column {
-      grid-column: 3 / 4;
+      grid-column: 3 / 5;
       color: #f7e0a0;
     }
 
@@ -531,7 +531,6 @@
       margin-bottom: 1rem;
       font-size: 1.7vw; 
       gap: 1rem;   
-      /* text-align: center; */
     }
     /* this is a label */
     .category-title {
