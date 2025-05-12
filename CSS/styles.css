@@ -115,39 +115,31 @@
       color: #D4AF37; /* A slightly brighter gold for h3 */
       font-size: 3rem;
       /* Text shadows for black gold effect */
-      text-shadow:
-        -0.3px -0.3px 0 #222, /* Even smaller dark shadows for h3 */
-        0.3px -0.3px 0 #222,
-        -0.3px 0.3px 0 #222,
-        0.3px 0.3px 0 #222,
-        0 0 4px rgba(212, 175, 55, 0.3), /* Reduced subtle gold glow */
-        0 0 6px rgba(70, 8, 8, 0.08); /* Very subtle dark red glow */
+      text-shadow: 0px 0px 10px rgb(92, 17, 17);
       position: relative;
       margin-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 0.1rem;
     }
-    h3::after {
+    /* h3::after {
       content: '';
       position: absolute;
-      bottom: -5px; /* Adjust this value to control the spacing below the text */
-      left: 0; /* Position the underline at the left edge of the h1 */
-      width: 100%; /* Make the underline the width of the h1 content */
-      height: 2px; /* Thickness of the golden line */
-      background-color: #E0C462; /* Your golden color for the underline */
-      /* Apply the box-shadow directly to the ::after pseudo-element */
-      box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6); /* Golden shadow below the line (no negative spread needed here as it's a thin line) */
-    }
-    /* Add a separate pseudo-element for the subtle dark red decorative element */
-    h3::before { /* Using ::before for the red element to avoid conflict */
+      bottom: -5px; 
+      left: 0; 
+      width: 100%;
+      height: 2px; 
+      background-color: #E0C462; 
+      box-shadow: 0 3px 8px rgba(224, 196, 98, 0.6);
+    }  
+    h3::before {
       content: '';
       position: absolute;
-      bottom: -12px; /* Adjust this value to position it below the golden line */
+      bottom: -12px; 
       left: 50%;
       transform: translateX(-50%);
       width: 85%;
       height: 5px;
       background: linear-gradient(to right, transparent, #460808, transparent);
-    }
+    } */
       
    
    /*-------------------*/
