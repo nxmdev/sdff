@@ -146,24 +146,40 @@
    /*-------------------*/
     /* NAV BAR BULLSHIT */   
     nav {
-      display: flex;
-      flex-direction: row;
+      display: flex;      
     }
-    .logo-img {
+    /* .logo-img {
       max-width: 100%;
       height: auto;
       display: block;
-    }
-    /* .nav-buttons {
-      margin-left: 5px;
-      margin-right: 5px;
     } */
+    .logo-img-properties {
+      width: 20rem;
+      height: auto;
+    }
+    .nav-left-side {
+      display: flex;
+      flex-direction: row;
+    }
     .navbar-one {
-      display: grid;
+      display: flex;
+      flex-direction: column;
     }
     .navbar-two {
-      display: grid;
-      justify-items: right;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-right-side {
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-three {
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar-four {
+      display: flex;
+      flex-direction: column;
     }
 
     main {
@@ -223,9 +239,10 @@
       border-width: 1px;
       transition: background-color .3s;
       transition: box-shadow .5s;      
-      font-size: 1.45rem;
+      font-size: 80%;
       font-family: 'Lora', serif;
       padding: 0.5rem;
+      width: 10rem;
     }
     button:hover {
       background-color: #e0cd9e;
