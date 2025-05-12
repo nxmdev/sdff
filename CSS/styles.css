@@ -427,9 +427,11 @@
     }
     .potion-price-column {
       color: rgb(211, 134, 41);
+      grid-column: 1;
     }
     .potion-name-column {
       color: rgba(255, 255, 255, 0.791);
+      grid-column: 2;
     }
     .potion-effect-column {
       grid-column: 3 / 4;
@@ -449,6 +451,7 @@
       margin-bottom: 1rem;
       font-size: 1.7vw; 
       gap: 1rem;   
+      /* text-align: center; */
     }
     /* this is a label */
     .category-title {
@@ -458,25 +461,23 @@
     }
     .price-column {
       grid-column: 1;
-      text-align: center;
+      color: rgba(211, 134, 41, 0.791);
     }
     .item-column {
       grid-column: 2;
       color: rgba(255, 255, 255, 0.791);
-      text-align: center;
     }
     .ability-column {
       grid-column: 3;
-      text-align: center;
       color: rgba(231, 180, 39, 0.875);
     }
     .item-stats-column {
       grid-column: 4;
       color: #f7e0a0;
-      text-align: center;
     }
-    .inv-price-styling {
-      color: rgb(211, 134, 41);
+    .armor-item-stats-column {
+      grid-column: 3;
+      color: #f7e0a0;
     }
 
     
