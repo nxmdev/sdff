@@ -409,6 +409,36 @@
     
     /*----------------------------*/
     /*----------------------------*/
+    /* POTIONS PAGE STYLING */    
+    .potion-main-content {
+      text-align: left;
+      width: 65%;
+      padding-left: 0.5rem;
+    }
+    .potion-graph {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      margin-left: 5rem;
+      margin-right: 5rem;  
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.7vw; 
+      gap: 1rem;
+    }
+    .potion-price-column {
+      color: rgb(211, 134, 41);
+    }
+    .potion-name-column {
+      color: rgba(255, 255, 255, 0.791);
+    }
+    .potion-effect-column {
+      grid-column: 3 / 4;
+      color: #f7e0a0;
+    }
+
+
+    /*----------------------------*/
+    /*----------------------------*/
     /* THE SHOP PAGE STYLING */
     .shop-inventory {
       display: grid;
@@ -417,13 +447,13 @@
       margin-right: 5rem;  
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-size: 1.7vw;    
+      font-size: 1.7vw; 
+      gap: 1rem;   
     }
     /* this is a label */
     .category-title {
       font-weight: 700;
       text-decoration: underline;
-      /* font-size: 1.7rem; */
       color: #fbefcf;
     }
     .price-column {
