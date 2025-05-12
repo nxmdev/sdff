@@ -248,6 +248,15 @@
       margin: 0;
     }
 
+
+    /*-----------------------------*/
+    /*-----------------------------*/
+    /* TEXT FORMATTING             */
+    .highlighted-text {
+      color: #D4AF37;
+    }
+
+
     /*----------------------------*/
     /*----------------------------*/
     /* INDEX-WELCOME PAGE STYLING */
@@ -323,6 +332,46 @@
     .ability-title-styling {
       color: #e7c040;
       text-shadow: 0px 0px 3px #ff0000;
+    }
+
+    .ability-intro {
+      display: flex;
+      flex-direction: column
+    }
+    .three-ability-boxes {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem;
+    }
+    .ability-box-one {
+      display: flex;
+      text-align: left;
+      width: 30%;
+      padding: 1.5rem;
+      border: 1px solid rgb(244, 200, 22);
+      border-radius: 44px;
+      background-color: #524322;
+      flex-direction: column;
+    }
+    .ability-box-two {
+      display: flex;
+      text-align: left;
+      width: 30%;
+      padding: 1.5rem;
+      border: 1px solid rgb(244, 200, 22);
+      border-radius: 44px;
+      background-color: #382c10;
+      flex-direction: column;
+    }
+    .ability-box-three {
+      display: flex;
+      text-align: left;
+      width: 30%;
+      padding: 1.5rem;
+      border: 1px solid rgb(244, 200, 22);
+      border-radius: 44px;
+      background-color: #231b03;
+      flex-direction: column;
     }
 
 
