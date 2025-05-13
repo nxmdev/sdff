@@ -147,7 +147,8 @@
    /*-------------------*/
     /* NAV BAR BULLSHIT */   
     nav {
-      display: flex;      
+      display: flex;    
+      margin-top: 1rem;  
     }
 
     .logo-img-properties {
