@@ -355,6 +355,7 @@
       display: flex;
       flex-direction: row;
       margin: 1rem;
+      gap: 0.5rem;
     }
     .ability-box-one {
       display: flex;
