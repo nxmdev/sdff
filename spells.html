@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Spells - The Realm A Solo TTRPG</title>
+    <title>Abilities - The Realm A Solo TTRPG</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
@@ -46,31 +46,119 @@
     <main>
       <div class="main-content">
         <div class="main-content-intro">
-          <h1>Spells</h1>
-          <p>
-            The spell system is currently in development. Below are spell ideas to be implemeneted.
-          </p>
-          <br>
-          <div class="game-features">
-            <div class="game-feature-titlebox">
-              <h3>Spell Idea Development</h3>
+          <h1>Spells</h1><br>
+          <a href="magic.html"><button>Magic Combat</button></a>
+            <div class="ability-main-content">
+              <div class="ability-intro">
+                There are three types of spells.
+                <p><text class="highlighted-text">Offensive</text>, <text class="highlighted-text">Defensive</text>, and <text class="highlighted-text">Class</text>.</p>
+                <div class="three-ability-boxes">                  
+                  <div class="ability-box-one">
+                    Offensive abilities are how you attack. You gain these abilities from equiping weapons.
+                    <i>Example: Equipping a dagger will give you the ability to Pierce</i>
+                  </div>
+                  <div class="ability-box-two">
+                    Defensive abilities are how you avoid or mitigate attacks. You gain these abilities from weapons and armor. 
+                    Dodge is an innate Defensive ability that all characters start with.
+                  </div>
+                  <div class="ability-box-three">
+                    Class abilities are obtained through leveling and can be used at any time. You gain one Class ability at character creation 
+                    and one every time you level. To gain a Class ability choose from the list below.
+                  </div>
+                </div>
+              </div>
+              <p>
+                Offensive and Defensive abilities level as you use them. For each use, success or fail, add a bubble of experience to the skill. When the 10th bubble is earned
+                your skill raises 1 level. That level is your skill modifier and is added to your rolls when that skill is used.
+              </p>            
+              <i>Below is a list of abilities in The Realm.</i>
             </div>
-            <p class="game-feature-maincontent1">
-              <label>&#9830; Healing line &#9830;</label><br>
-              <label>&#9830; Damage over time line &#9830;</label><br>
-              <label>&#9830; Animation magic &#9830;</label><br>
-              <label>&#9830; Stat boosting magic &#9830;</label><br>
-              <label>&#9830; Gear enhancing magic &#9830;</label><br>
+        </div><br>
+          <div class="ability-chart">
+            <p class="offensive-ability-column">
+              <label class="category-title">Offensive</label><br>
+              <text class="ability-text-styling">
+                Crush<br>Pierce<br>Shoot<br>Slash<br>Slice<br>Smash<br>Stab
+              </text>
             </p>
-            <p class="game-feature-maincontent2">
-              <label>&#9830; Debuff magic &#9830;</label><br>            
-              <label>&#9830; Illusion magic &#9830;</label><br>
-              <label>&#9830; Time bending magic &#9830;</label><br>
-              <label>&#9830; Decoy magic(illusion?) &#9830;</label><br>
-              <label>&#9830; Sacrifice magic &#9830;</label><br>
+
+            <p class="defensive-ability-column">              
+              <label class="category-title">Defensive</label><br>
+              <text class="ability-text-styling">
+                Block<br>Dodge
+              </text>
+            </p>
+
+            <p class="class-ability-column">              
+              <label class="category-title">Class</label><br>
+              <text class="ability-text-styling">
+                Bag of Caltrops<br>Dual Wield<br>Feet Like Cat<br>Glancing Blow<br>Heavy Strike<br>
+                Retalitory Strike<br>Shurikens<br>Wind Wisp
+              </text>
             </p>
           </div>
-        </div>        
+
+          <div>
+            <b>&#183; <text class="ability-title-styling">Bag of Caltrops</text></b> - Once each combat, you throw a small bags worth of caltrops 
+            in a wide fan out in front of you. At the beginning of the Mob's next attack phase, subtract 2 from their stamina.
+            <br><br>
+            <b>&#183; <text class="ability-title-styling">Block</text></b> - An ability given to the character when a shield is equiped. 
+            If successful, blocks all incoming damage from the attack it targetted.
+            <br><br>
+            <b>&#183; <text class="ability-title-styling">Crush</text></b> - An ability given to the character when a one handed mace is equiped.
+            <br><br>
+            <b>&#183; <text class="ability-title-styling">Dodge</text></b> - An ability that all characters have innately regardless of gear. Dodge cannot be used if one 
+            of your legs(movement wound) has been fully wounded and incapacitated.  
+            Dodge rolls can be heavily altered by using heavy armor. Chainmail(-1), Leather(-1), and Platemail(-2) will lower 
+            your dodge roll by the specified amount. This negative modifier is only applied once and is equal 
+            to the highest tier armor you are wearing.<br>
+            <div class="dodge-example-styling">
+              Examples:
+              <br>1. If you have 1 piece of Leather, you now apply -1 to your dodge roll.
+              <br>2. If you have 1 piece of Platemail, you now apply 
+              -2 to your dodge roll.
+              <br>3. If you have 2 pieces of Platemail, you still only apply a -2 to your dodge roll.
+              <br>4. If you have 1 piece of Leather and 2 pieces of Platemail, you still only apply -2 to your dodge roll.              
+             </div>
+             <br>
+             <b>&#183; <text class="ability-title-styling">Dual Wield</text></b> - An ability that grants the character the use of 2 one handed weapons. The consequence of this 
+             is allowing the attacker to take the highest of the 2d6 attack rolls and use the highest value of the two for both of them. 
+             Also this applies both weapon's damage values when the damage is calculated.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Feet Like Cat</text></b> - Once each combat, you turn a failed dodge into a successful dodge.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Glancing Blow</text></b> - Once each combat, take 1 less wound from an attack.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Heavy Strike</text></b> - Once each combat, add 1 wound to a successful attack.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Pierce</text></b> - An ability given to the character when a dagger is equiped.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Retalitory Strike</text></b> - Once each combat, when you make a successful defense roll you attack back inflicting
+             1 wound to a random body part. Roll a 1d6.<br>
+             <div class="dodge-example-styling">
+              1-Left Leg, 2-Right Leg, 3-Left Arm, 4-Right Arm, 5-Chest, 6-Head
+            </div>
+             <br>
+             <b>&#183; <text class="ability-title-styling">Shoot</text></b> - An ability given to the character when a bow is equiped. 
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Shurikens</text></b> - Pre-combat, you throw a shuriken from the shadows, applying 1 wound to any non-vital body part.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Slash</text></b> - An ability given to the character when a one handed sword is equiped.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Slice</text></b> - An ability given to the character when a two handed sword is equiped.
+             <br><br>
+             <b>&#183; <text class="ability-title-styling">Smash</text></b> - An ability given to the character when a two handed maul is equiped.
+            <br><br>
+            <b>&#183; <text class="ability-title-styling">Stab</text></b> - An ability given to the character when a two handed polearm is equiped.
+            <br><br>
+            <b>&#183; <text class="ability-title-styling">Wind Wisp</text></b> - Once each combat, you may transform into a Wind Wisp. 
+            <br>
+            <div class="dodge-example-styling">
+              Wind Wisp: Magical being that has the ability to move like the wind, making them appear invisible except to other Wisp and Faerie creatures. 
+              This effect wears off at the beginning of your next Attack Phase.
+            </div>       
+          </div>
+        </p>
       </div>
 
       <aside>
@@ -79,7 +167,7 @@
           Below are some links to the Learning HTML and CSS class I'm working on.
           <br><br>    
           <a href="tutorial/example.html"><button class="nav-buttons">Example Project</button></a>
-          <a href="tutorial/buttons.html"><button class="nav-buttons">Buttons Example Page</button></a> 
+          <a href="tutorial/buttons.html"><button class="nav-buttons">Buttons Example Page</button></a>  
         </p>
       </aside>
     </main>
